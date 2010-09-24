@@ -4,7 +4,7 @@ Version:	3.0.9
 Release:	%mkrel 1
 # Only licensing attribution is in README, no version.
 License:	LGPLv2+
-Group:		Applications/System
+Group:		System/Fonts/True type
 # This is a Red Hat maintained package which is specific to
 # our distribution.  Thus the source is only available from
 # within this srpm.
