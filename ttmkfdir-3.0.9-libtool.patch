@@ -1,0 +1,16 @@
+diff -urN ttmkfdir-3.0.9/Makefile ttmkfdir-3.0.9-patched/Makefile
+--- ttmkfdir-3.0.9/Makefile	2012-09-05 01:27:15.017005830 +1100
++++ ttmkfdir-3.0.9-patched/Makefile	2012-09-05 01:27:35.846004060 +1100
+@@ -39,10 +39,10 @@
+ all: ttmkfdir
+ 
+ .cpp.o:
+-	libtool --mode=compile $(CXX) $(CXXFLAGS) -o $@ -c $^
++	$(CXX) $(CXXFLAGS) -o $@ -c $^
+ 
+ ttmkfdir: ttmkfdir.o directory.o commandline.o ttf.o encoding.o parser.o builtin.o
+-	libtool --mode=link $(CXX) -o $@ $^ $(LDFLAGS)
++	$(CXX) -o $@ $^ $(LDFLAGS)
+ 
+ parser.cpp: encoding.l
+ 	    flex -i -8 -o$@ $<
