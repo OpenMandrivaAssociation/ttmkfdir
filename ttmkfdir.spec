@@ -1,7 +1,7 @@
 Summary:	Utility to create fonts.scale files for truetype fonts
 Name:		ttmkfdir
 Version:	3.0.9
-Release:	15
+Release:	16
 # Only licensing attribution is in README, no version.
 License:	LGPLv2+
 Group:		System/Fonts/True type
